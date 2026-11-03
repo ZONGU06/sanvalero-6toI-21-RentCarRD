@@ -1,0 +1,50 @@
+name: Build RentCarRD APK
+
+# Cuando ejecutarse el workflow
+on:
+  push:
+    branches: [ master ]
+  # También se puede ejecutar manualmente desde la interfaz de GitHub
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    runs-on: windows-latest
+    
+    # Pasos a ejecutar
+    steps:
+      # 1. Descargar el código del repositorio
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      # 2. Configurar Java Development Kit
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+      
+      # 3. Configurar Android SDK
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
+        with:
+          api-level: 33
+          build-tools: '33.0.0'
+          ndk: '25.1'
+      
+      # 3.1. Dar permisos al script de Gradle
+      - name: Grant execute permissions for gradle
+        run: chmod +777 gradlew
+      
+      # 4. Compilar la app
+      - name: Build Debug APK
+        name: Build APK
+        run: ./gradlew assembleDebug
+      
+      # 5. Subir el APK como artifact (para descargar después)
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: rentcarrd-apk
+          path: app/build/outputs/apk/debug/*.apk
