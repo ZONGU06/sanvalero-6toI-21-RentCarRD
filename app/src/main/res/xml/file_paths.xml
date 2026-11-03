@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Rutas de acceso a los directorios de almacenamiento externo -->
+    <external-path name="downloads" path="Downloads/" />
+    <external-path name="documents" path="Documents/" />
+    <external-path name="pictures" path="Pictures/" />
+    <external-path name="music" path="Music/" />
+</paths>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.RentCarRD" parent="Theme.Material.DayNight.NoActionBar">
+        <!-- Color primary (accent rojo RentCarRD) -->
+        <item name="colorPrimary">#D32F2F</item>
+        <item name="colorPrimaryVariant">#B71C1C</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Color secondary -->
+        <item name="colorSecondary">#FFC107</item>
+        <item name="colorSecondaryVariant">#E6A700</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Color de fondo y superficie para modo oscuro -->
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#121212</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <!-- Personalización de componentes Material -->
+        <item name="android:windowBackground">#121212</item>
+        <item name="actionBarStyle">@style/Widget.RentCarRD.ActionBar</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- Botones -->
+        <item name="buttonStyle">@style/Widget.RentCarRD.Button</item>
+        <item name="buttonOutlineStyle">@style/Widget.RentCarRD.OutlinedButton</item>
+
+        <!-- Tarjetas -->
+        <item name="cardViewStyle">@style/Widget.RentCarRD.CardView</item>
+
+        <!-- AppBar -->
+        <item name="android:actionBarTabStyle">@style/Widget.RentCarRD.TabView</item>
+    </style>
+
+    <!-- Estilo para la ActionBar -->
+    <style name="Widget.RentCarRD.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">#D32F2F</item>
+        <item name="android:titleTextStyle">@style/Widget.RentCarRD.ActionBar.Title</item>
+    </style>
+
+    <style name="Widget.RentCarRD.ActionBar.Title" parent="Widget.AppCompat.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Estilo para botones -->
+    <style name="Widget.RentCarRD.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">#D32F2F</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="cornerRadius">4dp</item>
+    </style>
+
+    <style name="Widget.RentCarRD.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:background">transparent</item>
+        <item name="android:textColor">#D32F2F</item>
+        <item name="strokeColor">#D32F2F</item>
+        <item="cornerRadius">4dp</item>
+    </style>
+
+    <!-- Estilo para tarjetas -->
+    <style name="Widget.RentCarRD.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">#1E1E1E</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <!-- Estilo para vistas -->
+    <style name="Widget.RentCarRD.TextView" parent="Widget.AppCompat.TextView" />
+
+    <!-- Estilo para campos de texto outlined -->
+    <style name="Widget.RentCarRD.OutlinedTextField" parent="Widget.MaterialComponents.TextInputOutlinedBox">
+        <item name="android:colorControlNormal">#B0B0B0</item>
+        <item name="android:colorControlActivated">#D32F2F</item>
+        <item name="android:colorError">#F44336</item>
+        <item="boxStrokeErrorColor">#F44336</item>
+    </style>
+
+    <!-- Estilo para campos de texto -->
+    <style name="Widget.RentCarRD.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">#B0B0B0</item>
+        <item name="hintTextColor">#D32F2F</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Style para dibujos/íconos -->
+    <style name="Widget.RentCarRD.Icon" parent="Widget.AppCompat.ImageView" />
+
+    <!-- Style para Scaffold -->
+    <style name="Widget.RentCarRD.Scaffold" parent="Widget.MaterialComponents.Scaffold">
+        <item name="statusBarBackground">#000000</item>
+        <item="android:background">#121212</item>
+    </style>
+
+    <!-- Style para BottomAppBar -->
+    <style name="Widget.RentCarRD.BottomAppBar" parent="Widget.MaterialComponents.BottomAppBar">
+        <item name="android:background">#1E1E1E</item>
+        <item="menu">@menu/options_menu</item>
+    </style>
+
+    <!-- Style para FloatingActionButton -->
+    <style name="Widget.RentCarRD.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:backgroundTint">#D32F2F</item>
+    </style>
+
+    <!-- Style para Toolbar -->
+    <style name="Widget.RentCarRD.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">#D32F2F</item>
+        <item name="titleTextAppearance">@style/Widget.RentCarRD.Toolbar.Title</item>
+        <item name="titleTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="Widget.RentCarRD.Toolbar.Title" parent="Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Style para NavigationBar -->
+    <style name="Widget.RentCarRD.NavigationBar" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">#121212</item>
+        <item="itemIconTint">#B0B0B0</item>
+        <item="itemTextColor">#B0B0B0</item>
+    </style>
+
+    <style name="Widget.RentCarRD.NavigationBar.Item" parent="Widget.MaterialComponents.BottomNavigationView.Item">
+        <item name="android:colorActive">#D32F2F</item>
+    </style>
+
+    <!-- Style para Dialog -->
+    <style name="Widget.RentCarRD.Dialog" parent="Widget.MaterialComponents.Dialog">
+        <item name="android:background">#1E1E1E</item>
+        <item name="android:colorBackground">#1E1E1E</item>
+    </style>
+
+    <style name="Theme.RentCarRD.AlertDialog" parent="Theme.Material.DayNight.Dialog">
+        <item name="android:background">#1E1E1E</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#B0B0B0</item>
+    </style>
+</resources>

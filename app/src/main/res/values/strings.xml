@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings principales de la aplicación RentCarRD -->
+    <string name="app_name">RentCarRD</string>
+    <string name="title_activity_login">Iniciar sesión</string>
+    <string name="title_activity_register">Registrarse</string>
+    <string name="title_activity_catalog">Catálogo de Vehículos</string>
+    <string name="title_activity_dashboard">Panel de Control</string>
+    <string name="title_activity_operations">Operaciones</string>
+    <string name="title_activity_admin">Administración</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="nav_login">Login</string>
+    <string name="nav_register">Registro</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_catalog">Catálogo</string>
+    <string name="nav_my_rentals">Mis Contratos</string>
+    <string name="nav_operations">Operaciones</string>
+    <string name="nav_admin">Administrador</string>
+
+    <!-- Textos de formulario -->
+    <string name="label_email">Correo Electrónico</string>
+    <string name="label_password">Contraseña</string>
+    <string name="label_full_name">Nombre Completo</string>
+    <string name="label_phone">Teléfono</string>
+    <string name="label_identification">Cédula / RNC</string>
+    <string name="label_role">Rol</string>
+    <string name="label_brand">Marca</string>
+    <string name="label_model">Modelo</string>
+    <string name="label_year">Año</string>
+    <string name="label_color">Color</string>
+    <string name="label_category">Categoría</string>
+    <string name="label_transmission">Transmisión</string>
+    <string name="label_passengers">Pasajeros</string>
+    <string name="label_fuel_type">Tipo de Combustible</string>
+    <string name="label_daily_rate">Tarifa Diaria</string>
+    <string name="label_contract_number">Número de Contrato</string>
+    <string name="label_contract_type">Tipo de Contrato</string>
+    <string name="label_start_date">Fecha Inicio</string>
+    <string name="label_end_date">Fecha Fin</string>
+    <string name="label_expected_end">Fecha Esperada Fin</string>
+    <string name="label_actual_end">Fecha Devolución Real</string>
+    <string name="label_base_amount">Monto Base</string>
+    <string name="label_extra_charges">Cargos Extra</string>
+    <string name="label_discounts">Descuentos</string>
+    <string name="label_total_amount">Monto Total</string>
+    <string name="label_issue_description">Descripción del Problema</string>
+    <string name="label_service_type">Tipo de Servicio</string>
+    <string name="label_labor_cost">Costo Mano de Obra</string>
+    <string name="label_parts_cost">Costo Repuestos</string>
+    <string name="label_promised_date">Fecha Prometida</string>
+    <string name="label_license_plate">Placa</string>
+    <string name="label_mileage">Kilometraje</string>
+    <string name="label_payment_method">Método de Pago</string>
+    <string name="label_system_key">Configuración</string>
+    <string name="label_system_value">Valor</string>
+
+    <!-- Etiquetas de estado -->
+    <string name="status_available">Disponible</string>
+    <string name="status_rented">Alquilado</string>
+    <string name="status_maintenance">Mantenimiento</string>
+    <string name="status_inactive">Inactivo</string>
+    <string name="status_active">Activo</string>
+    <string name="status_completed">Completado</string>
+    <string name="status_cancelled">Cancelado</string>
+    <string name="status_pending">Pendiente</string>
+    <string name="status_in_progress">En progreso</string>
+    <string name="status_delayed">Retrasado</string>
+
+    <!-- Métodos de pago -->
+    <string name="payment_method_cash">Efectivo</string>
+    <string name="payment_method_card">Tarjeta</string>
+    <string name="payment_method_transfer">Transferencia</string>
+
+    <!-- Tipos de contrato -->
+    <string name="contract_type_rental">Alquiler</string>
+    <string name="contract_type_maintenance">Mantenimiento</string>
+
+    <!-- Errores y mensajes -->
+    <string name="error_empty_fields">Por favor complete todos los campos obligatorios</string>
+    <string name="error_invalid_email">Correo electrónico inválido</string>
+    <string name="error_password_short">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_credentials_incorrect">Correo o contraseña incorrectos</string>
+    <string name="error_vehicle_not_available">Vehículo no disponible para las fechas solicitadas</string>
+    <string name="error_overbooking">Solapamiento de fechas detectado</string>
+
+    <!-- Mensajes de éxito -->
+    <string name="success_login">Inicio de sesión exitoso</string>
+    <string name="success_register">Registro exitoso</string>
+    <string name="success_vehicle_added">Vehículo agregado correctamente</string>
+    <string name="success_report_generated">Reporte generado exitosamente</string>
+
+    <!-- Placeholders -->
+    <string name="hint_email">ejemplo@dominicana.do</string>
+    <string name="hint_password">••••••••</string>
+    <string name="hint_phone">+1 809-123-4567</string>
+    <string name="hint_identification">123-4567890-1</string>
+    <string name="hint_brand">Ej: Toyota</string>
+    <string name="hint_model">Ej: Corolla</string>
+</resources>

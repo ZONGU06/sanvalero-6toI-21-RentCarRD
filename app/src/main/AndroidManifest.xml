@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sanvalero.rentcarrd">
+
+    <!-- Permisos necesarios para almacenamiento externo (PDFs, CSV, backups) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNTED_FILESYSTEMS" />
+
+    <!-- Permisos de internet para sharing de reportes -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="RentCarRD"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.RentCarRD">
+
+        <!-- Configuración Hilt -->
+        <meta-data
+            android:name="hilt.android.default_package"
+            value="com.sanvalero.rentcarrd" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="RentCarRD">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity para compartir reportes (PDF/CSV) -->
+        <activity
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </activity>
+    </application>
